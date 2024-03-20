@@ -1,9 +1,13 @@
-<h1>{{msg}}</h1>
+<div class="p-3 mb-2 bg-info text-dark text-center">
+    <h1>{{msg}}</h1>
 
-<!-- Interpolation->{{templateExpression}} -->
-<h1 class="te">{{count}}</h1>
+    <!-- Interpolation->{{templateExpression}} -->
 
-<!-- Enent binding -->
-<button (click)="increment()">Increment</button>
-<button (click)="decrement()">Decrement</button>
-<button (click)="reset()">Reset</button>
+    <h1 class="te">{{count}}</h1>
+
+    <!-- Enent binding -->
+    <button (click)="increment()" class="btn btn-success">Increment</button>
+    <button (click)="decrement()" class="btn btn-dark">Decrement</button>
+    <button (click)="reset()" class="btn btn-info">Reset</button>
+
+</div>
